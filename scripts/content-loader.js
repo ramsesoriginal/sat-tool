@@ -27,7 +27,9 @@ function loadNewPage(pageName) {
     .then(response => response.text())
     .then(contentHTML => {
       // Insert the content HTML into the main section
-      document.querySelector("#content").innerHTML = contentHTML;
+      const contentElement = document.querySelector("#content");
+      contentElement.innerHTML = contentHTML;
+      modifyRelativeLinks(contentElement);
 
       // Load the corresponding script dynamically
       const script = document.createElement('script');
@@ -55,6 +57,23 @@ function loadNewPage(pageName) {
 }
 
 /**
+ * Attach an event listener to modify relative links to use loadNewPage.
+ * @param {HTMLElement} [containerElement] - The HTML element to search for relative links within.
+ */
+function modifyRelativeLinks(containerElement = document) {
+  containerElement.querySelectorAll('a').forEach(link => {
+    const href = link.getAttribute('href');
+    if (href && !href.startsWith('/') && !href.startsWith('http://') && !href.startsWith('https://')) {
+      link.addEventListener('click', event => {
+        event.preventDefault(); // Prevent the default link behavior
+        const pageName = href.split('.')[0]; // Extract the page name from the link
+        loadNewPage(pageName); // Load the corresponding page using loadNewPage
+      });
+    }
+  });
+}
+
+/**
  * Load the initial page defined by the search parameter when DOM content is ready.
  */
 function loadInitialPage() {
@@ -67,6 +86,7 @@ function loadInitialPage() {
 }
 
 document.addEventListener('DOMContentLoaded', () => {
+  modifyRelativeLinks();
   loadInitialPage();
 });
 

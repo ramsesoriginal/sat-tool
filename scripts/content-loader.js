@@ -1,4 +1,5 @@
 let currentPage = null;
+document.inits = {};
 
 /**
  * Get the current page stored in the 'currentPage' variable.
@@ -40,9 +41,7 @@ function loadNewPage(pageName) {
 
       // Update the page title
       script.onload = function () {
-        // Raise a custom event indicating page loading is complete
-        const event = new Event('page-loaded');
-        document.dispatchEvent(event);
+        document.inits[pageName]();
       };
 
       // Set the 'currentPage' variable to the new page name
@@ -51,6 +50,10 @@ function loadNewPage(pageName) {
       // Set the pushState to the new page
       const newURL = `${pageName}.html`;
       history.pushState({ page: pageName }, null, newURL);
+
+      // Raise a custom event indicating page loading is complete
+      const event = new Event('page-loaded');
+      document.dispatchEvent(event);
     })
     .catch(error => {
       console.error('Error fetching content:', error);

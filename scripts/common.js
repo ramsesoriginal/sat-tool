@@ -8,15 +8,18 @@ import {
 
 import { setCookie, getCookie } from './cookie.js';
 import { getCurrentPage, loadNewPage } from './content-loader.js';
+import { updatePageTitles, updateNavigationLinks } from './content-tools.js';
 
 // Export the imported functions to make them available in other modules
 export {
-  isLanguageLoaded,
+  /*isLanguageLoaded,
   getCurrentLanguage,
   setCurrentLanguage,
   translate,
   setCookie,
   getCookie,
   getCurrentPage,
-  loadNewPage
+  loadNewPage,*/
+  updatePageTitles/*,
+  updateNavigationLinks*/
 };

@@ -4,19 +4,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/normalize.css">
     <link rel="stylesheet" href="style/layout.css">
     <link rel="stylesheet" href="style/colours.css">
     <link rel="stylesheet" href="style/style.css">
     <title><!-- Page Title --></title>
 </head>
 <body>
-    <header>
-        <h1>Header Content</h1>
+    <header class="top">
+        <hgroup>
+            <h1>Self Assessment Tool</h1>
+        </hgroup>
+        <nav class="user">
+            <ul>
+                <li><a href="profile.html">Max Mustermann</a></li>
+                <li><a href="logout.html" class="logout">Logout</a></li>
+                <li><a href="changeLang.en.html" class="change language language-en">en</a></li>
+            </ul>
+        </nav>
+        <nav class="tabs">
+            <ul>
+                <li><a href="questionnaire.html">Fragebogen</a></li>
+                <li><a href="evaluation.html">Auswertung</a></li>
+                <li><a href="profile.html">Profil</a></li>
+            </ul>
+        </nav>
     </header>
-    <main id="content">
-        <!-- Content will be inserted here -->
+    <main class="top">
+        <h2 class="current-page-title">Current-Page</h2>
+        <div id="content" class="dynamic-content">
+            <!-- Content will be inserted here -->
+        </div>
     </main>
-    <footer>
+    <footer class="top">
         Footer Content
     </footer>
     <script type="module" src="scripts/content-loader.js"></script>

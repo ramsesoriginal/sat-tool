@@ -35,6 +35,7 @@ function loadNewPage(pageName) {
       const script = document.createElement('script');
       script.src = `scripts/${pageName}.js`;
       script.classList.add('dynamic-script');
+      script.type="module";
       document.body.appendChild(script);
 
       // Update the page title

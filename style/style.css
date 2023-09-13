@@ -1,0 +1,143 @@
+html {
+    font-family: Muli, sans-serif, Arial;
+    overflow-wrap: break-word;
+    word-break: break-word;
+}
+
+header.top {
+    background: #fff;
+    box-shadow: 0 0.623rem 0.625rem 0 rgba(0,0,0,.4);
+    z-index: 100;
+    font-size: 1.125rem;
+    font-weight: 700;
+    line-height: 1.25rem;
+}
+
+header.top hgroup {
+    color: #4a4a4a;
+    position: relative;
+}
+
+header.top hgroup::before {
+    position: absolute;
+    content: "";
+    height: 5rem;
+    width: 14.6rem;
+    top: -1rem;
+    background: no-repeat url("../assets/tu-berlin-logo-long-red.svg");
+}
+
+header.top hgroup h1 {
+    text-indent: 13rem;
+}
+
+
+@media (max-width: 600px) {
+    header.top hgroup h1 {
+        text-indent: 0;
+        position: relative;
+        top: 2rem;
+    }
+
+    header.top hgroup::before {
+        scale: 0.6;
+        top: -2.1rem;
+        left: -1rem;
+    }
+}
+
+@media (max-width: 400px) {
+    header.top hgroup h1 {
+        font-size: 1.5em;
+    }
+
+    header.top hgroup::before {
+        top: -2.1rem;
+        left: -1.75rem;
+    }
+}
+
+
+@media (max-width: 300px) {
+    html {
+        font-size: 10px;
+    }
+
+    header.top hgroup {
+        top: 1rem;
+    }
+
+    header.top hgroup::before {
+        top: -2.4rem;
+    }
+}
+
+header.top nav.tabs li {
+    border-left: 1px solid hsla(0,0%,59%,.25);
+}
+
+header.top nav.tabs a:hover {
+    background-color: hsla(0,0%,59%,.25);
+}
+
+header.top nav.tabs li:first-of-kind {
+    border-left: 0;
+}
+
+main.top::before,
+main.top::after {
+    content: "";
+    background: linear-gradient(90deg,#1f90cc,#49cb40);
+    position: absolute;
+    height: 13rem;
+    display: block;
+    top:-3rem;
+    right:0;
+    width:100%;
+    -ms-transform: skewY(-3deg);
+    transform: skewY(-3deg);
+    z-index: 5;
+}
+
+main.top::after {
+    top: -10rem;
+}
+
+main.top {
+    padding-top: 13rem;
+}
+
+main.top .current-page-title {
+    z-index: 100;
+    color: #fff;
+    font-size: 350%;
+}
+
+main.top .dynamic-content{
+    position: relative;
+    z-index: 100;
+}
+
+footer.top {
+    color: #fff;
+    background: rgb(0, 0, 0);
+    z-index: 20;
+}
+
+footer.top::before {
+    background: #000;
+    content: "";
+    display: block;
+    height: 13rem;
+    position: absolute;
+    right: 0;
+    top: -7rem;
+    -ms-transform: skewY(-3deg);
+    transform: skewY(-3deg);
+    width: 100%;
+    z-index: 5;
+}
+
+nav.user {
+    background-image: linear-gradient(90deg,rgba(255,255,255,0),#f6f6f6);
+}

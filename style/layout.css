@@ -1,0 +1,78 @@
+html {
+	width: 100%;
+	height: 100%;
+	overflow-y: scroll;
+}
+
+body {
+	width: 100%;
+	height: calc(100% + 10rem);
+	overflow: hidden;
+	position: relative;
+	display: flex;
+	flex-direction: column;
+}
+
+header.top {
+	height: 9rem;
+    position: relative;
+    overflow: hidden;
+}
+
+header.top hgroup {
+	padding-left: 1rem;
+	width: 100%;
+    height: 4.75rem;
+}
+
+header.top hgroup {
+	font-size: 125%;
+}
+
+header.top ul {
+	display: flex;
+	padding: 0;
+}
+
+header.top a {
+	display: inline-block;
+	padding: 0 1rem;
+}
+
+header.top nav.user {
+    height: 1.75rem;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+header.top nav.user ul {
+	width: 100%;
+	justify-content: flex-end;
+}
+
+header.top nav.tabs a {
+	height: 2rem;
+	vertical-align: middle;
+	line-height: 2;
+}
+
+main.top {
+	flex: 1;
+	padding: 1rem;
+	position: relative;
+}
+
+main.top .current-page-title {
+	position: absolute;
+	top: 2rem;
+	left: 1rem;
+}
+
+footer.top {
+	height: 5rem;
+    margin-top: 3.75rem;
+    padding: 0px 0px 2.5rem;
+    position: relative;
+}

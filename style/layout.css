@@ -52,6 +52,10 @@ header.top nav.user ul {
 	justify-content: flex-end;
 }
 
+header.top nav.user a {
+    height: 1.75rem;
+}
+
 header.top nav.tabs a {
 	height: 2rem;
 	vertical-align: middle;

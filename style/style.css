@@ -76,8 +76,17 @@ header.top nav.tabs li {
     border-left: 1px solid hsla(0,0%,59%,.25);
 }
 
-header.top nav.tabs a:hover {
+header.top nav.tabs a.current {
     background-color: hsla(0,0%,59%,.25);
+}
+
+header.top nav.tabs a.current:hover {
+    background-color: hsla(0,0%,59%,.85);
+}
+
+header.top a:hover {
+    background-color: hsla(0,0%,59%,.25);
+    box-shadow: 0 0 0.25rem 0 rgba(0,0,0,.4) inset;
 }
 
 header.top nav.tabs li:first-of-kind {

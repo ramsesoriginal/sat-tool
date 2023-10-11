@@ -66,6 +66,7 @@ main.top {
 	flex: 1;
 	padding: 1rem;
 	position: relative;
+	overflow-y: auto;
 }
 
 main.top .current-page-title {
@@ -74,9 +75,28 @@ main.top .current-page-title {
 	left: 1rem;
 }
 
+.question-group {
+    margin-bottom: 2rem;
+    display: block;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.question {
+    margin-bottom: 1rem;
+}
+
 footer.top {
 	height: 5rem;
     margin-top: 3.75rem;
     padding: 0px 0px 2.5rem;
     position: relative;
+}
+
+#profile-form {
+    display: block;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
 }

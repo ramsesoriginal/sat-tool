@@ -1,0 +1,235 @@
+[
+  {
+    "groupInfo": {
+      "class": "general",
+      "displayText": "General Work Competence"
+    },
+    "questions": [
+      {
+        "question": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+        "value": 2
+      },
+      {
+        "question": "Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.",
+        "value": 0
+      },
+      {
+        "question": "Vivamus efficitur sem ut erat condimentum, ut bibendum tortor fringilla.",
+        "value": 4
+      },
+      {
+        "question": "Sed hendrerit purus a venenatis interdum.",
+        "value": 3
+      },
+      {
+        "question": "Phasellus vel lacinia felis. Duis in nisl vel metus bibendum malesuada non ut nulla."
+      },
+      {
+        "question": "Maecenas vel sem ut ex venenatis euismod.",
+        "value": 4
+      },
+      {
+        "question": "Nullam mattis tincidunt massa, eget cursus purus malesuada nec."
+      },
+      {
+        "question": "Quisque nec lectus vestibulum, iaculis ligula non, tincidunt arcu."
+      },
+      {
+        "question": "Cras scelerisque eget urna sit amet suscipit."
+      },
+      {
+        "question": "Proin tincidunt auctor turpis vel dictum."
+      }
+    ]
+  },
+  {
+    "groupInfo": {
+      "class": "method",
+      "displayText": "Methodological Competence"
+    },
+    "questions": [
+      {
+        "question": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+      },
+      {
+        "question": "Vestibulum et turpis vel nunc sollicitudin bibendum."
+      },
+      {
+        "question": "Proin at metus vel libero dapibus fringilla a eget arcu."
+      },
+      {
+        "question": "Quisque nec lectus vestibulum, iaculis ligula non, tincidunt arcu."
+      },
+      {
+        "question": "Suspendisse euismod mauris non libero malesuada congue."
+      },
+      {
+        "question": "Phasellus vel lacinia felis. Duis in nisl vel metus bibendum malesuada non ut nulla."
+      },
+      {
+        "question": "Maecenas vel sem ut ex venenatis euismod."
+      },
+      {
+        "question": "Nullam mattis tincidunt massa, eget cursus purus malesuada nec."
+      },
+      {
+        "question": "Vivamus efficitur sem ut erat condimentum, ut bibendum tortor fringilla."
+      },
+      {
+        "question": "Cras scelerisque eget urna sit amet suscipit."
+      }
+    ]
+  },
+  {
+    "groupInfo": {
+      "class": "social",
+      "displayText": "Social & Leadership Skills"
+    },
+    "questions": [
+      {
+        "question": "Suspendisse euismod mauris non libero malesuada congue."
+      },
+      {
+        "question": "Sed hendrerit purus a venenatis interdum."
+      },
+      {
+        "question": "Vestibulum et turpis vel nunc sollicitudin bibendum."
+      },
+      {
+        "question": "Proin tincidunt auctor turpis vel dictum."
+      },
+      {
+        "question": "Cras scelerisque eget urna sit amet suscipit."
+      },
+      {
+        "question": "Phasellus vel lacinia felis. Duis in nisl vel metus bibendum malesuada non ut nulla."
+      },
+      {
+        "question": "Vivamus efficitur sem ut erat condimentum, ut bibendum tortor fringilla."
+      },
+      {
+        "question": "Maecenas vel sem ut ex venenatis euismod."
+      },
+      {
+        "question": "Nullam mattis tincidunt massa, eget cursus purus malesuada nec."
+      },
+      {
+        "question": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+      }
+    ]
+  },
+  {
+    "groupInfo": {
+      "class": "teaching",
+      "displayText": "Teaching Competence"
+    },
+    "questions": [
+      {
+        "question": "Quisque nec lectus vestibulum, iaculis ligula non, tincidunt arcu."
+      },
+      {
+        "question": "Suspendisse euismod mauris non libero malesuada congue."
+      },
+      {
+        "question": "Proin tincidunt auctor turpis vel dictum."
+      },
+      {
+        "question": "Cras scelerisque eget urna sit amet suscipit."
+      },
+      {
+        "question": "Vestibulum et turpis vel nunc sollicitudin bibendum."
+      },
+      {
+        "question": "Phasellus vel lacinia felis. Duis in nisl vel metus bibendum malesuada non ut nulla."
+      },
+      {
+        "question": "Vivamus efficitur sem ut erat condimentum, ut bibendum tortor fringilla."
+      },
+      {
+        "question": "Maecenas vel sem ut ex venenatis euismod."
+      },
+      {
+        "question": "Nullam mattis tincidunt massa, eget cursus purus malesuada nec."
+      },
+      {
+        "question": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+      }
+    ]
+  },
+  {
+    "groupInfo": {
+      "class": "project",
+      "displayText": "Project & Research Management Competence"
+    },
+    "questions": [
+      {
+        "question": "Vivamus efficitur sem ut erat condimentum, ut bibendum tortor fringilla."
+      },
+      {
+        "question": "Suspendisse euismod mauris non libero malesuada congue."
+      },
+      {
+        "question": "Sed hendrerit purus a venenatis interdum."
+      },
+      {
+        "question": "Quisque nec lectus vestibulum, iaculis ligula non, tincidunt arcu."
+      },
+      {
+        "question": "Proin tincidunt auctor turpis vel dictum."
+      },
+      {
+        "question": "Phasellus vel lacinia felis. Duis in nisl vel metus bibendum malesuada non ut nulla."
+      },
+      {
+        "question": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+      },
+      {
+        "question": "Cras scelerisque eget urna sit amet suscipit."
+      },
+      {
+        "question": "Maecenas vel sem ut ex venenatis euismod."
+      },
+      {
+        "question": "Nullam mattis tincidunt massa, eget cursus purus malesuada nec."
+      }
+    ]
+  },
+  {
+    "groupInfo": {
+      "class": "personal",
+      "displayText": "Personal Competence"
+    },
+    "questions": [
+      {
+        "question": "Maecenas vel sem ut ex venenatis euismod."
+      },
+      {
+        "question": "Suspendisse euismod mauris non libero malesuada congue."
+      },
+      {
+        "question": "Proin tincidunt auctor turpis vel dictum."
+      },
+      {
+        "question": "Cras scelerisque eget urna sit amet suscipit."
+      },
+      {
+        "question": "Vestibulum et turpis vel nunc sollicitudin bibendum."
+      },
+      {
+        "question": "Phasellus vel lacinia felis. Duis in nisl vel metus bibendum malesuada non ut nulla."
+      },
+      {
+        "question": "Vivamus efficitur sem ut erat condimentum, ut bibendum tortor fringilla."
+      },
+      {
+        "question": "Quisque nec lectus vestibulum, iaculis ligula non, tincidunt arcu."
+      },
+      {
+        "question": "Sed hendrerit purus a venenatis interdum."
+      },
+      {
+        "question": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+      }
+    ]
+  }
+]

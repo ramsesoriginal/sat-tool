@@ -1,2 +1,120 @@
-<h2>Profile content</h2>
-<a href="questionnaire.html">qq questionnaire</a>
+<form id="profile-form">
+    <fieldset>
+        <legend>Welcher der folgenden Institutionen sind Sie zugeordnet?</legend>
+        <label for="institution">
+            <input type="radio" name="institution" id="tu-berlin" value="TU Berlin">
+            TU Berlin
+        </label>
+        <label for="institution">
+            <input type="radio" name="institution" id="hu-berlin" value="HU Berlin">
+            HU Berlin
+        </label>
+        <label for="institution">
+            <input type="radio" name="institution" id="fu-berlin" value="FU Berlin">
+            FU Berlin
+        </label>
+        <label for="institution">
+            <input type="radio" name="institution" id="charite" value="Charité">
+            Charité
+        </label>
+        <label for="institution">
+            <input type="radio" name="institution" id="other" value="Other">
+            Andere, und zwar: <input type="text" id="other-institution" name="other-institution">
+        </label>
+    </fieldset>
+    <!-- Add more fieldsets for other questions -->
+    <fieldset>
+        <legend>Welcher Fächergruppe lässt sich das Fachgebiet, dem Sie zugeordnet sind, am besten zuordnen?</legend>
+        <label for="faculty">Bitte tippen Sie hier die Anfangsbuchstaben ihres Faches ein:</label>
+        <input type="text" id="faculty" name="faculty">
+        <label for="other-faculty">Falls Sie keine Zuordnung finden, geben Sie bitte hier das Fach an:</label>
+        <input type="text" id="other-faculty" name="other-faculty">
+    </fieldset>
+    <!-- Add more fieldsets for other questions -->
+    <fieldset>
+        <legend>Welche der unten genannten Positionen entspricht Ihrer derzeitigen Situation am ehesten?</legend>
+        <label for="position">
+            <input type="radio" name="position" id="phd-student" value="Promovierende*r">
+            Promovierende*r (auch, wenn noch keine Absicht erklärt oder die Arbeit bereits abgegeben, aber noch nicht verteidigt ist/ die wissenschaftliche Aussprache noch nicht stattgefunden hat)
+        </label>
+        <label for="position">
+            <input type="radio" name="position" id="postdoc" value="PostDoc">
+            PostDoc
+        </label>
+        <label for="position">
+            <input type="radio" name="position" id="mtsv" value="MTSV mit Promotion">
+            MTSV mit Promotion
+        </label>
+        <label for="position">
+            <input type="radio" name="position" id="juniorprof" value="Juniorprof/ Nachwuchsgruppenleiter*in">
+            Juniorprof/ Nachwuchsgruppenleiter*in
+        </label>
+        <label for="position">
+            <input type="radio" name="position" id="professor" value="Professor*in">
+            Professor*in
+        </label>
+        <label for="position">
+            <input type="radio" name="position" id="other-position" value="Other">
+            Andere Position, und zwar: <input type="text" id="other-position-text" name="other-position-text">
+        </label>
+    </fieldset>
+    <!-- Add more fieldsets for other questions -->
+    <fieldset>
+        <legend>Wann haben Sie Ihre Promotion begonnen?</legend>
+        <label for="start-year">Jahr Beginn der Promotion:</label>
+        <input type="text" id="start-year" name="start-year">
+        <p>Ich habe (noch) nicht begonnen</p>
+    </fieldset>
+    <!-- Add more fieldsets for other questions -->
+    <fieldset>
+        <legend>Wann haben Sie Ihre Promotion abgeschlossen (Jahr der Wissenschaftlichen Aussprache/ Verteidigung /Rigorosum)?</legend>
+        <label for="end-year">Jahr Abschluss der Promotion:</label>
+        <input type="text" id="end-year" name="end-year">
+        <p>Ich habe noch nicht abgeschlossen</p>
+    </fieldset>
+    <!-- Add more fieldsets for other questions -->
+    <fieldset>
+        <legend>Haben Sie im Laufe Ihrer beruflichen Karriere Erfahrungen in Bereichen außerhalb der Wissenschaft gesammelt?</legend>
+        <label for="experience-yes">
+            <input type="radio" name="experience" id="experience-yes" value="Ja">
+            Ja
+        </label>
+        <label for="experience-no">
+            <input type="radio" name="experience" id="experience-no" value="Nein">
+            Nein
+        </label>
+        <p>Ihr Geschlecht/Ihre Identität (WM-Studie 2017)</p>
+    </fieldset>
+    <!-- Add more fieldsets for other questions -->
+    <fieldset>
+        <legend>Ihr Geschlecht/Ihre Identität (WM-Studie 2017)</legend>
+        <label for="gender-male">
+            <input type="radio" name="gender" id="gender-male" value="männlich">
+            männlich
+        </label>
+        <label for="gender-female">
+            <input type="radio" name="gender" id="gender-female" value="weiblich">
+            weiblich
+        </label>
+        <label for="gender-non-binary">
+            <input type="radio" name="gender" id="gender-non-binary" value="nicht-binär">
+            nicht-binär
+        </label>
+        <label for="gender-other">
+            <input type="radio" name="gender" id="gender-other" value="weiteres Geschlecht">
+            weiteres Geschlecht: <input type="text" id="other-gender" name="other-gender">
+        </label>
+        <label for="gender-none">
+            <input type="radio" name="gender" id="gender-none" value="keine Angabe">
+            keine Angabe
+        </label>
+    </fieldset>
+    <!-- Add more fieldsets for other questions -->
+    <fieldset>
+        <legend>In welchem Jahr sind Sie geboren?</legend>
+        <label for="birth-year">Geburtsjahr:</label>
+        <input type="text" id="birth-year" name="birth-year">
+    </fieldset>
+    <!-- Add more fieldsets for other questions -->
+    <input type="submit" value="Save">
+</form>

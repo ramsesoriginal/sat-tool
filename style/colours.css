@@ -1,0 +1,108 @@
+/* general
+ * method
+ * social
+ * teaching
+ * project
+ * personal
+ */
+
+:root {
+  --main-bgl: #f8f8f8;
+  --main-bgd: #ededed;
+  --main-bgh: #c6191b;
+
+  --main-fg: #554b4c;
+  --main-fgl: #4a4a4a;
+  --main-fgd: #c6191b;
+  --main-fgh: #f8f8f8;
+
+  --main-general: #f33e3d;
+  --light-general: #f29689;
+
+  --main-method: #6f6f6f;
+  --light-method: #c7c7c7;
+  
+  --main-social: #ec671a;
+  --light-social: #f6a975;
+  
+  --main-teaching: #4688ca;
+  --light-teaching: #9db4de;
+  
+  --main-project: #0d7b6e;
+  --light-project: #87aaa3;
+  
+  --main-personal: #f29200;
+  --light-personal: #fabe75;
+}
+
+.general.lbg,
+.general .lbg {
+  color: var(--main-fg);
+  background-color: var(--light-general);
+}
+
+.general.dbg,
+.general .dbg {
+  color: var(--main-fgh);
+  background-color: var(--main-general);
+}
+
+.method.lbg,
+.method .lbg {
+  color: var(--main-fg);
+  background-color: var(--light-method);
+}
+
+.method.dbg,
+.method .dbg {
+  color: var(--main-fgh);
+  background-color: var(--main-method);
+}
+
+.social.lbg,
+.social .lbg {
+  color: var(--main-fg);
+  background-color: var(--light-social);
+}
+
+.social.dbg,
+.social .dbg {
+  color: var(--main-fgh);
+  background-color: var(--main-social);
+}
+
+.teaching.lbg,
+.teaching .lbg {
+  color: var(--main-fg);
+  background-color: var(--light-teaching);
+}
+
+.teaching.dbg,
+.teaching .dbg {
+  color: var(--main-fgh);
+  background-color: var(--main-teaching);
+}
+
+.project.lbg,
+.project .lbg {
+  color: var(--main-fg);
+  background-color: var(--light-project);
+}
+
+.project.dbg,
+.project .dbg {
+  color: var(--main-fgh);
+  background-color: var(--main-project);
+}
+
+.personal.lbg,
+.personal .lbg {
+  color: var(--main-fg);
+  background-color: var(--light-personal);
+}
+
+.personal.dbg,
+.personal .dbg {
+  color: var(--main-fgh);
+  background-color: var(--main-personal);
+}

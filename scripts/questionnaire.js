@@ -32,8 +32,8 @@ async function loadTemplateFile(templatePath) {
  */
 function generateQuestionGroupHTML(groupData, groupTemplate) {
   const groupHTML = groupTemplate
-    .replace('{{group}}', groupData.groupInfo.displayText)
-    .replace('{{groupClass}}', groupData.groupInfo.class);
+    .replace('{{group}}', groupData.display_text)
+    .replace('{{groupClass}}', groupData.group_class);
     
   return groupHTML;
 }
@@ -47,8 +47,9 @@ function generateQuestionGroupHTML(groupData, groupTemplate) {
  */
 function generateQuestionHTML(questionData, questionIndex, questionTemplate) {
   let questionHTML = questionTemplate
-    .replace('{{question}}', questionData.question)
-    .replace('{{questionIndex}}', `question${questionIndex}`);
+    .replaceAll('{{question}}', questionData.question_text)
+    .replaceAll('{{questionIndex}}', `question${questionIndex}`)
+    .replaceAll('{{questionID}}', questionData.question_id);
     
   // Set the radio button value based on the provided value (if available)
   if (questionData.hasOwnProperty('value')) {
@@ -85,8 +86,9 @@ async function generateQuestionnaireHTML(data) {
     loadTemplateFile('../content/_question-template.html')
   ]);
 
+  console.log(data);
   let questionnaireHTML = "";
-  data.forEach((groupData, groupIndex) => {
+  data.question_groups.forEach((groupData, groupIndex) => {
     const groupHTML = generateQuestionGroupHTML(groupData, groupTemplate);
     const groupElement = parser.parseFromString(groupHTML, "text/html").body.firstChild;
     groupData.questions.forEach((questionData, questionIndex) => {
@@ -109,12 +111,16 @@ async function generateQuestionnaireHTML(data) {
  * @returns {Promise<Object[]>} A Promise that resolves to an array of question group data.
  */
 async function loadQuestionnaireData() {
-  const response = await fetch('../api/questionnaire-data.json');
-  if (response.ok) {
-    return await response.json();
-  } else {
-    throw new Error('Failed to load questionnaire data.');
-  }
+    const token = localStorage.getItem('token');
+    const headers = token ? { 'Authorization': `Bearer ${token}` } : {};
+
+    const response = await fetch('http://localhost:8000/get_data', { headers });
+
+    if (response.ok) {
+        return await response.json();
+    } else {
+        throw new Error('Failed to load questionnaire data.');
+    }
 }
 
 /**

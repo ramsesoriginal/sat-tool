@@ -100,3 +100,7 @@ footer.top {
     margin-left: auto;
     margin-right: auto;
 }
+
+.adminOnly {
+	display: none;
+}

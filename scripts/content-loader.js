@@ -14,6 +14,7 @@ function getCurrentPage() {
  * @param {string} pageName - The name of the new page to load.
  */
 function loadNewPage(pageName) {
+  if (pageName=="#" || pageName == "") return;
   // Check if there is a current page to unload
   if (currentPage) {
     // Remove existing scripts and content

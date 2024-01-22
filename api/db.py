@@ -146,36 +146,28 @@ def delete_question_from_db(question_id: int) -> Dict[str, str]:
     return {"message": f"Question with ID {question_id} deleted successfully"}
 
 
-# Mock database
-def get_user(username: str):
-    db = {
-        "johndoe": {
-            "username": "johndoe",
-            "hashed_password": get_password_hash("secret"),
-            "email": "johndoe@example.com",
-            "disabled": False,
-            "is_admin": True
-        }
-    }
-    if username in db:
-        user_dict = db[username]
-        return UserInDB(**user_dict)
+def get_user(username: str) -> Optional[UserInDB]:
+    with db.get_cursor() as cursor:
+        cursor.execute("""
+            SELECT id, username, email, hashed_password, is_admin, disabled
+            FROM users WHERE username = %s;
+        """, (username,))
+        
+        user_data = cursor.fetchone()
+        if user_data:
+            return UserInDB(**user_data)
+        else:
+            return None
 
-# Assume you have a function to save a user and hash passwords
 def create_user(user_data: UserCreateRequest) -> UserInDB:
-    # Hash the user's password
     hashed_password = get_password_hash(user_data.password)
     
-    # Create a new user instance (adapt this to your database model)
-    new_user = UserInDB(
-        username=user_data.username,
-        email=user_data.email,
-        hashed_password=hashed_password,
-        is_admin=user_data.is_admin
-    )
-
-    # Save the new user to the database (this will depend on your DB setup)
-    # db.add(new_user)
-    # db.commit()
-
-    return new_user
+    with db.get_cursor() as cursor:
+        cursor.execute("""
+            INSERT INTO users (username, email, hashed_password, is_admin, disabled)
+            VALUES (%s, %s, %s, %s, %s) RETURNING id, username, email, is_admin, disabled;
+        """, (user_data.username, user_data.email, hashed_password, user_data.is_admin, False))
+        
+        new_user_data = cursor.fetchone()
+    
+    return UserInDB(**new_user_data)

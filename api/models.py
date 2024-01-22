@@ -50,12 +50,12 @@ class NewQuestion(BaseModel):
 class User(BaseModel):
     username: str
     email: Optional[str] = None
-    hashed_password: str
+    hashed_password: Optional[str] = None
     disabled: Optional[bool] = None
     is_admin: bool = False
 
 class UserInDB(User):
-    hashed_password: str
+    hashed_password: Optional[str] = None
 
 class UserCreateRequest(BaseModel):
     username: str
